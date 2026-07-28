@@ -108,13 +108,3 @@ Contributions are welcome!
 ## 📄 License
 
 This project is created for learning purposes.
-
----
-
-## 👨‍💻 Author
-
-**Habibul Haque**
-
-GitHub: https://github.com/your-github-username
-
-Portfolio: https://your-portfolio-link.com
