@@ -1,24 +1,6 @@
-<<<<<<< HEAD
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
 # 🎬 Cinemora - React Movie Discovery App
 
-Cinemora is a modern movie discovery web application built with **React**, **Vite**, and the **TMDB API**. Users can search for movies, browse trending titles, and view movie information in a clean and responsive interface.
+Cinemora is a modern movie discovery web application built with **React**, **Vite**, and the **TMDB API**. Users can search for movies, browse trending titles, and view movie information in a clean, responsive interface.
 
 ## 🚀 Features
 
@@ -50,7 +32,7 @@ Cinemora is a modern movie discovery web application built with **React**, **Vit
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/cinemora.git
+git clone https://github.com/habib-design/cinemora.git
 ```
 
 Go to the project directory
@@ -126,4 +108,3 @@ Contributions are welcome!
 ## 📄 License
 
 This project is created for learning purposes.
->>>>>>> 5bd6f0e7df7dfcc5087dee83af2c0b406154e72e
