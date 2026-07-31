@@ -16,9 +16,9 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 =======
-# 🎬 MovieFlix - React Movie Discovery App
+# 🎬 Cinemora - React Movie Discovery App
 
-MovieFlix is a modern movie discovery web application built with **React**, **Vite**, and the **TMDB API**. Users can search for movies, browse trending titles, and view movie information in a clean and responsive interface.
+Cinemora is a modern movie discovery web application built with **React**, **Vite**, and the **TMDB API**. Users can search for movies, browse trending titles, and view movie information in a clean and responsive interface.
 
 ## 🚀 Features
 
@@ -50,13 +50,13 @@ MovieFlix is a modern movie discovery web application built with **React**, **Vi
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/movieflix-clone.git
+git clone https://github.com/your-username/cinemora.git
 ```
 
 Go to the project directory
 
 ```bash
-cd movieflix-clone
+cd cinemora
 ```
 
 Install dependencies
