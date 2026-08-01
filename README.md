@@ -113,3 +113,15 @@ TMDB is used for movie discovery and search.
 ## 📄 License
 
 This repository is for learning and demo purposes.
+
+---
+
+## 🙋 About the Author
+
+Developed by **Habib**.
+
+- GitHub: [habib-design](https://github.com/habib-design)
+- Portfolio: [Your Portfolio URL](https://your-portfolio.example.com)
+- Contact: [your.email@example.com](mailto:your.email@example.com)
+
+Thanks for checking out Cinemora — built with passion for movies and web development.
