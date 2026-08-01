@@ -28,19 +28,13 @@ Cinemora is a modern React movie discovery app that helps users search, explore,
 - TMDB API
 - JavaScript (ES6+)
 - CSS
+- TMDB API
 
-## 🖼 Screenshots
+## 📸 Screenshots
 
-Add your actual app screenshots to the `screenshots/` folder and update these image paths.
+> Add screenshots here after deploying your project.
 
-![Hero Section](screenshots/hero-section.png)
-*Hero section with movie cards and search interface.*
-
-![Trending Movies](screenshots/trending-movies.png)
-*Trending movie previews shown in the app UI.*
-
-![All Movies](screenshots/all-movies.png)
-*All movies grid with posters, ratings, and release dates.*
+---
 
 ## ⚙️ Setup
 
@@ -112,15 +106,4 @@ TMDB is used for movie discovery and search.
 
 ## 📄 License
 
-This repository is for learning and demo purposes.
-
----
-
-## 🙋 About the Author
-
-Developed by **Habib**.
-
-- GitHub: [habib-design](https://github.com/habib-design)
-- Contact: [sameerhaque0@gmail.com](mailto:sameerhaque0@gmail.com)
-
-Thanks for checking out Cinemora — built with passion for movies and web development.
+This project is created for learning purposes.
