@@ -5,15 +5,22 @@ import MovieCard from './components/MovieCard.jsx';
 
 const API_BASE_URL = 'https://api.themoviedb.org/3'
 
-const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY?.trim()
 
-const API_OPTIONS = {
-  method: 'GET',
-  headers: {
-    accept:'application/json',
-    Authorization:`Bearer ${API_KEY}`
-  }
-}
+const API_OPTIONS = API_KEY
+  ? {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+        Authorization: `Bearer ${API_KEY}`
+      }
+    }
+  : {
+      method: 'GET',
+      headers: {
+        accept: 'application/json'
+      }
+    }
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('')
@@ -34,6 +41,14 @@ const App = () => {
   const fetchMovies = async (query = '') => {
     setIsLoading(true)
     setErrorMessage('')
+
+    if (!API_KEY) {
+      setErrorMessage('TMDB API key is missing. Add VITE_TMDB_API_KEY to .env.local and restart the app.')
+      setMovieList([])
+      setIsLoading(false)
+      return
+    }
+
     try{
       const endpoint = query
       ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
