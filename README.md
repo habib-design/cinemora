@@ -32,7 +32,11 @@ Cinemora is a modern React movie discovery app that helps users search, explore,
 
 ## 📸 Screenshots
 
-> Add screenshots here after deploying your project.
+![All movies view](screenshots/all-movies.png)
+
+![Hero section](screenshots/hero-section.png)
+
+![Trending movies](screenshots/trending-movies.png)
 
 ---
 
