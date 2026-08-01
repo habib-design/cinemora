@@ -1,110 +1,115 @@
-# 🎬 Cinemora - React Movie Discovery App
+# 🎬 Cinemora
 
-Cinemora is a modern movie discovery web application built with **React**, **Vite**, and the **TMDB API**. Users can search for movies, browse trending titles, and view movie information in a clean, responsive interface.
+Cinemora is a modern React movie discovery app that helps users search, explore, and browse trending films using the **TMDB API** and **Appwrite**.
+
+## ✨ What it does
+
+- Search movies by title
+- Display movie posters, ratings, and release dates
+- Show trending movies based on search popularity
+- Track movie search counts through Appwrite
+- Fetch popular and search results with TMDB
 
 ## 🚀 Features
 
-- 🔍 Search movies in real-time
-- 🎥 Browse trending/popular movies
-- 🖼️ Movie posters, ratings, and release dates
-- ⚡ Fast performance with Vite
-- 📱 Fully responsive UI
-- ⏳ Loading spinner while fetching data
-- ❌ Error handling for failed API requests
-- 🔐 Secure API key using environment variables
+- 🔍 Movie search powered by TMDB
+- 📈 Trending movies derived from Appwrite metrics
+- 🖼 Movie poster previews
+- ⚡ Fast client-side UI with Vite
+- ⏳ Loading spinner during requests
+- ❌ Error handling for failed API calls
+- 🔐 Environment-based API configuration
 
-## 🛠️ Tech Stack
+## 🧩 Tech Stack
 
-- React.js
-- JavaScript (ES6+)
+- React 19
 - Vite
-- CSS
+- Appwrite
 - TMDB API
+- JavaScript (ES6+)
+- CSS
 
-## 📸 Screenshots
+## 🖼 Screenshots
 
-> Add screenshots here after deploying your project.
+> Replace these placeholders with actual screenshot files in the repository.
 
----
+![Home Screen](screenshots/home-page.png)
+*Home page with hero banner, search input, and trending movies.*
 
-## ⚙️ Installation
+![Trending Movies](screenshots/trending.png)
+*Trending movies shown from Appwrite analytics.*
 
-Clone the repository
+![Search Results](screenshots/search-results.png)
+*TMDB-powered search results with movie cards.*
+
+## ⚙️ Setup
+
+1. Clone the repository
 
 ```bash
 git clone https://github.com/habib-design/cinemora.git
-```
-
-Go to the project directory
-
-```bash
 cd cinemora
 ```
 
-Install dependencies
+2. Install dependencies
 
 ```bash
 npm install
 ```
 
-Start the development server
+3. Add environment variables
+
+Create a `.env` file in the project root with:
+
+```env
+VITE_TMDB_API_KEY=your_tmdb_bearer_token
+VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+VITE_APPWRITE_DATABASE_ID=your_appwrite_database_id
+VITE_APPWRITE_COLLECTION_ID=your_appwrite_collection_id
+```
+
+4. Run the app
 
 ```bash
 npm run dev
 ```
 
----
+## 🔧 Appwrite Integration
 
-## 🔑 Environment Variables
+The app uses Appwrite to store and retrieve trending movie metrics.
 
-Create a `.env.local` file in the project root.
+- `src/appwrite.js` sets up the Appwrite client
+- `updateSearchCount()` increments counts by `movie_id`
+- `getTrendingMovies()` returns unique top trending items
 
-```env
-VITE_TMDB_API_KEY=your_tmdb_bearer_token
-```
+## 🔐 TMDB Integration
 
-> Get your API key from TMDB.
+TMDB is used for movie discovery and search.
 
----
+- Search endpoint: `/search/movie`
+- Discover endpoint: `/discover/movie?sort_by=popularity.desc`
+- Poster base URL: `https://image.tmdb.org/t/p/w500`
 
-## 🌐 API Used
+## 📁 Project structure
 
-The project uses **The Movie Database (TMDB) API** to fetch movie information.
+- `src/App.jsx` — main app logic
+- `src/appwrite.js` — Appwrite helper methods
+- `src/components/` — UI components
+- `public/` — static assets
+- `.env` — local environment variables (not committed)
 
-Features used:
-- Search Movies
-- Discover Movies
-- Movie Posters
-- Ratings
-- Release Dates
+## 💡 Notes
 
----
-
-## 💡 Future Improvements
-
-- Movie Details Page
-- Genre Filtering
-- Pagination
-- Infinite Scrolling
-- Watchlist using Local Storage
-- Dark/Light Theme
-- Favorites
-- Trailer Integration
-- Authentication
-
----
+- Do not commit `.env` to GitHub.
+- Add screenshot images under a `screenshots/` folder and update the markdown paths as needed.
 
 ## 🤝 Contributing
 
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
-
----
+1. Fork the repo
+2. Create a branch
+3. Make changes
+4. Open a pull request
 
 ## 📄 License
 
-This project is created for learning purposes.
+This repository is for learning and demo purposes.
