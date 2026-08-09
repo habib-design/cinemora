@@ -32,9 +32,10 @@ export const updateSearchCount = async(searchTerm, movie) => {
             })
         }
 
-    } catch(error){
-        console.error(error)
-    }}
+    } } catch (error) {
+    console.error("Error fetching trending movies:", error)
+    return []
+}}
 
 export const getTrendingMovies = async () => {
     try{
