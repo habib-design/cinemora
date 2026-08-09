@@ -81,13 +81,14 @@ const App = () => {
   }
 
   const loadTrendingMovies = async () => {
-    try {
-      const movies = await getTrendingMovies()
-      setTrendingMovies(movies)
-    } catch(error){
-      console.error(`Error fetching trending movies: ${error}`)
-    }
+  try {
+    const movies = await getTrendingMovies()
+    setTrendingMovies(movies || [])
+  } catch (error) {
+    console.error(`Error fetching trending movies: ${error}`)
+    setTrendingMovies([])
   }
+}
 
   useEffect(() => {
     fetchMovies(debouncedSearchTerm)
